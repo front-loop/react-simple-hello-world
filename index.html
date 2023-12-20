@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone"></script>
+    <title>Hello World</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById('root')
+      ReactDOM.render(<h1 className="container">Hello World</h1>, rootElement)
+
+      // 1. React - create react element
+      // const element = React.createElement(
+      //   'h1',
+      //   { className: 'container' },
+      //   'Hello World'
+      // )
+
+      // 2. Babel - JSX
+      // const element2 = <h1 className="container">Hello World</h1>
+
+      // 3. React DOM - turn react element into DOM
+      // ReactDOM.render(element2, rootElement)
+    </script>
+  </body>
+</html>
